@@ -21,7 +21,7 @@ class SnackCreateView(CreateView):
 class SnackUpdateView(UpdateView):    
     template_name = 'snack_update.html'
     model = Snack
-    fields='__all__'
+    fields=['title','description']
     success_url = reverse_lazy('snack_list')
    
 

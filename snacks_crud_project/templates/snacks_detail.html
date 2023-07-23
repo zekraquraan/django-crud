@@ -6,6 +6,8 @@
 <h3>purchaser : {{snack.purchaser| add:2}}</h3>
 <h3>description: {{snack.description|capfirst}}</h3>
 
+<a href="{% url 'snack_list' %}">Home</a>
+<a href="{% url 'snack_create' %}">Create Snack</a>
 <a href="{% url 'snack_update' snack.id%}">Update</a>
 <a href="{% url 'snack_delete' snack.id%}">Delete</a>
 {% endblock%}
